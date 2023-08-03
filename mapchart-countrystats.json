@@ -1,0 +1,957 @@
+{
+    "United_States": {
+      "gdp": 19485394000000,
+      "pop": 329791231,
+      "gdpgrowth": 2.27
+    },
+    "China": {
+      "gdp": 12237700479375,
+      "pop": 1410275957,
+      "gdpgrowth": 6.9
+    },
+    "Japan": {
+      "gdp": 4872415104315,
+      "pop": 126662472,
+      "gdpgrowth": 1.71
+    },
+    "Germany": {
+      "gdp": 3693204332230,
+      "pop": 82624374,
+      "gdpgrowth": 2.22
+    },
+    "India": {
+      "gdp": 2650725335364,
+      "pop": 1354195680,
+      "gdpgrowth": 6.68
+    },
+    "United_Kingdom": {
+      "gdp": 2637866340434,
+      "pop": 66064804,
+      "gdpgrowth": 1.79
+    },
+    "France": {
+      "gdp": 2582501307216,
+      "pop": 64144086,
+      "gdpgrowth": 1.82
+    },
+    "Brazil": {
+      "gdp": 2053594877013,
+      "pop": 208504960,
+      "gdpgrowth": 0.98
+    },
+    "Italy": {
+      "gdp": 1943835376342,
+      "pop": 60004032,
+      "gdpgrowth": 1.5
+    },
+    "Canada": {
+      "gdp": 1647120175449,
+      "pop": 36554348,
+      "gdpgrowth": 3.05
+    },
+    "Russia": {
+      "gdp": 1578417211937,
+      "pop": 145452536,
+      "gdpgrowth": 1.55
+    },
+    "South_Korea": {
+      "gdp": 1530750923149,
+      "pop": 51511639,
+      "gdpgrowth": 3.06
+    },
+    "Australia": {
+      "gdp": 1323421072479,
+      "pop": 24590334,
+      "gdpgrowth": 1.96
+    },
+    "Spain": {
+      "gdp": 1314314164402,
+      "pop": 46584170,
+      "gdpgrowth": 3.05
+    },
+    "Mexico": {
+      "gdp": 1150887823404,
+      "pop": 122839258,
+      "gdpgrowth": 2.04
+    },
+    "Indonesia": {
+      "gdp": 1015420587285,
+      "pop": 264498852,
+      "gdpgrowth": 5.07
+    },
+    "Turkey": {
+      "gdp": 851549299635,
+      "pop": 82089826,
+      "gdpgrowth": 7.44
+    },
+    "Netherlands": {
+      "gdp": 830572618850,
+      "pop": 17207198,
+      "gdpgrowth": 3.16
+    },
+    "Saudi_Arabia": {
+      "gdp": 686738400000,
+      "pop": 34193122,
+      "gdpgrowth": -0.86
+    },
+    "Switzerland": {
+      "gdp": 678965423322,
+      "pop": 8451687,
+      "gdpgrowth": 1.09
+    },
+    "Argentina": {
+      "gdp": 637430331479,
+      "pop": 44054616,
+      "gdpgrowth": 2.85
+    },
+    "Sweden": {
+      "gdp": 535607385506,
+      "pop": 10058190,
+      "gdpgrowth": 2.29
+    },
+    "Poland": {
+      "gdp": 526465839003,
+      "pop": 38532812,
+      "gdpgrowth": 4.81
+    },
+    "Belgium": {
+      "gdp": 494763551891,
+      "pop": 11384489,
+      "gdpgrowth": 1.73
+    },
+    "Thailand": {
+      "gdp": 455302682986,
+      "pop": 70898202,
+      "gdpgrowth": 3.91
+    },
+    "Iran": {
+      "gdp": 454012768724,
+      "pop": 84505076,
+      "gdpgrowth": 3.76
+    },
+    "Austria": {
+      "gdp": 416835975862,
+      "pop": 8797496,
+      "gdpgrowth": 3.04
+    },
+    "Norway": {
+      "gdp": 399488897844,
+      "pop": 5277392,
+      "gdpgrowth": 1.92
+    },
+    "United_Arab_Emirates": {
+      "gdp": 382575085092,
+      "pop": 9068296,
+      "gdpgrowth": 0.79
+    },
+    "Nigeria": {
+      "gdp": 375745486521,
+      "pop": 193495907,
+      "gdpgrowth": 0.81
+    },
+    "Israel": {
+      "gdp": 353268411919,
+      "pop": 8309257,
+      "gdpgrowth": 3.33
+    },
+    "South_Africa": {
+      "gdp": 348871647960,
+      "pop": 56641209,
+      "gdpgrowth": 1.32
+    },
+    "Hong_Kong": {
+      "gdp": 341449340451,
+      "pop": 7461519,
+      "gdpgrowth": 3.79
+    },
+    "Ireland": {
+      "gdp": 331430014003,
+      "pop": 4771854,
+      "gdpgrowth": 7.8
+    },
+    "Denmark": {
+      "gdp": 329865537183,
+      "pop": 5737284,
+      "gdpgrowth": 2.24
+    },
+    "Singapore": {
+      "gdp": 323907234412,
+      "pop": 5764487,
+      "gdpgrowth": 3.62
+    },
+    "Malaysia": {
+      "gdp": 314710259511,
+      "pop": 31975806,
+      "gdpgrowth": 5.9
+    },
+    "Colombia": {
+      "gdp": 314457601860,
+      "pop": 48351671,
+      "gdpgrowth": 1.79
+    },
+    "Philippines": {
+      "gdp": 313595208737,
+      "pop": 106738501,
+      "gdpgrowth": 6.68
+    },
+    "Pakistan": {
+      "gdp": 304951818494,
+      "pop": 216379655,
+      "gdpgrowth": 5.7
+    },
+    "Chile": {
+      "gdp": 277075944402,
+      "pop": 18368577,
+      "gdpgrowth": 1.49
+    },
+    "Finland": {
+      "gdp": 252301837573,
+      "pop": 5508140,
+      "gdpgrowth": 2.63
+    },
+    "Bangladesh": {
+      "gdp": 249723862487,
+      "pop": 161793964,
+      "gdpgrowth": 7.28
+    },
+    "Egypt": {
+      "gdp": 235369129338,
+      "pop": 101789386,
+      "gdpgrowth": 4.18
+    },
+    "Vietnam": {
+      "gdp": 223779865815,
+      "pop": 94033048,
+      "gdpgrowth": 6.81
+    },
+    "Portugal": {
+      "gdp": 219308128887,
+      "pop": 10307530,
+      "gdpgrowth": 2.68
+    },
+    "Czech_Republic_(Czechia)": {
+      "gdp": 215913545038,
+      "pop": 10531305,
+      "gdpgrowth": 4.29
+    },
+    "Romania": {
+      "gdp": 211883923504,
+      "pop": 19698853,
+      "gdpgrowth": 7.26
+    },
+    "Peru": {
+      "gdp": 211389272242,
+      "pop": 31605486,
+      "gdpgrowth": 2.53
+    },
+    "New_Zealand": {
+      "gdp": 204139049909,
+      "pop": 4746252,
+      "gdpgrowth": 3.03
+    },
+    "Greece": {
+      "gdp": 203085551429,
+      "pop": 10692228,
+      "gdpgrowth": 1.35
+    },
+    "Iraq": {
+      "gdp": 192060810811,
+      "pop": 39621162,
+      "gdpgrowth": -2.07
+    },
+    "Algeria": {
+      "gdp": 167555280113,
+      "pop": 41136546,
+      "gdpgrowth": 1.6
+    },
+    "Qatar": {
+      "gdp": 166928571429,
+      "pop": 2711755,
+      "gdpgrowth": 1.58
+    },
+    "Kazakhstan": {
+      "gdp": 162886867832,
+      "pop": 18314814,
+      "gdpgrowth": 4.1
+    },
+    "Hungary": {
+      "gdp": 139761138103,
+      "pop": 9788941,
+      "gdpgrowth": 3.99
+    },
+    "Angola": {
+      "gdp": 122123822334,
+      "pop": 30208628,
+      "gdpgrowth": -0.15
+    },
+    "Kuwait": {
+      "gdp": 120126277613,
+      "pop": 4124904,
+      "gdpgrowth": -2.87
+    },
+    "Sudan": {
+      "gdp": 117487857143,
+      "pop": 40679828,
+      "gdpgrowth": 4.28
+    },
+    "Ukraine": {
+      "gdp": 112154185121,
+      "pop": 44657257,
+      "gdpgrowth": 2.52
+    },
+    "Morocco": {
+      "gdp": 109708728849,
+      "pop": 35528115,
+      "gdpgrowth": 4.09
+    },
+    "Ecuador": {
+      "gdp": 104295862000,
+      "pop": 16696944,
+      "gdpgrowth": 2.37
+    },
+    "Cuba": {
+      "gdp": 96851000000,
+      "pop": 11336405,
+      "gdpgrowth": 1.78
+    },
+    "Slovakia": {
+      "gdp": 95617670260,
+      "pop": 5439417,
+      "gdpgrowth": 3.4
+    },
+    "Sri_Lanka": {
+      "gdp": 87357205923,
+      "pop": 21506813,
+      "gdpgrowth": 3.31
+    },
+    "Ethiopia": {
+      "gdp": 80561496134,
+      "pop": 108197950,
+      "gdpgrowth": 10.25
+    },
+    "Kenya": {
+      "gdp": 79263075749,
+      "pop": 48948137,
+      "gdpgrowth": 4.87
+    },
+    "Dominican_Republic": {
+      "gdp": 75931656815,
+      "pop": 10647244,
+      "gdpgrowth": 4.55
+    },
+    "Guatemala": {
+      "gdp": 75620095538,
+      "pop": 16578723,
+      "gdpgrowth": 2.76
+    },
+    "Oman": {
+      "gdp": 70783875163,
+      "pop": 4541854,
+      "gdpgrowth": -0.27
+    },
+    "Myanmar": {
+      "gdp": 67068745521,
+      "pop": 52288341,
+      "gdpgrowth": 6.76
+    },
+    "Luxembourg": {
+      "gdp": 62316359824,
+      "pop": 596283,
+      "gdpgrowth": 2.3
+    },
+    "Panama": {
+      "gdp": 62283756584,
+      "pop": 4096063,
+      "gdpgrowth": 5.32
+    },
+    "Ghana": {
+      "gdp": 58996776238,
+      "pop": 30222262,
+      "gdpgrowth": 8.14
+    },
+    "Bulgaria": {
+      "gdp": 58220973783,
+      "pop": 7182428,
+      "gdpgrowth": 3.81
+    },
+    "Costa_Rica": {
+      "gdp": 57285984448,
+      "pop": 4993842,
+      "gdpgrowth": 3.28
+    },
+    "Uruguay": {
+      "gdp": 56156972158,
+      "pop": 3422200,
+      "gdpgrowth": 2.66
+    },
+    "Croatia": {
+      "gdp": 55213087271,
+      "pop": 4192467,
+      "gdpgrowth": 2.92
+    },
+    "Belarus": {
+      "gdp": 54456465473,
+      "pop": 9707876,
+      "gdpgrowth": 2.42
+    },
+    "Lebanon": {
+      "gdp": 53576985687,
+      "pop": 6109252,
+      "gdpgrowth": 1.53
+    },
+    "Tanzania": {
+      "gdp": 53320625959,
+      "pop": 56267032,
+      "gdpgrowth": 7.1
+    },
+    "Macao": {
+      "gdp": 50361201096,
+      "pop": 638609,
+      "gdpgrowth": 9.1
+    },
+    "Uzbekistan": {
+      "gdp": 49677172714,
+      "pop": 31945682,
+      "gdpgrowth": 5.3
+    },
+    "Slovenia": {
+      "gdp": 48769655479,
+      "pop": 2098392,
+      "gdpgrowth": 5
+    },
+    "Lithuania": {
+      "gdp": 47544459559,
+      "pop": 2904450,
+      "gdpgrowth": 3.83
+    },
+    "Serbia": {
+      "gdp": 41431648801,
+      "pop": 7464880,
+      "gdpgrowth": 1.87
+    },
+    "Azerbaijan": {
+      "gdp": 40747792238,
+      "pop": 10071567,
+      "gdpgrowth": 0.1
+    },
+    "Jordan": {
+      "gdp": 40068308451,
+      "pop": 10215381,
+      "gdpgrowth": 1.97
+    },
+    "Tunisia": {
+      "gdp": 39952095561,
+      "pop": 11811443,
+      "gdpgrowth": 1.96
+    },
+    "Paraguay": {
+      "gdp": 39667400816,
+      "pop": 6355404,
+      "gdpgrowth": 5.21
+    },
+    "Libya": {
+      "gdp": 38107728083,
+      "pop": 6378261,
+      "gdpgrowth": 26.68
+    },
+    "Turkmenistan": {
+      "gdp": 37926285714,
+      "pop": 5968383,
+      "gdpgrowth": 6.5
+    },
+    "DR_Congo": {
+      "gdp": 37642482562,
+      "pop": 84283273,
+      "gdpgrowth": 3.7
+    },
+    "Bolivia": {
+      "gdp": 37508642113,
+      "pop": 11435533,
+      "gdpgrowth": 4.2
+    },
+    "Côte_d'Ivoire": {
+      "gdp": 37353276059,
+      "pop": 24848016,
+      "gdpgrowth": 7.7
+    },
+    "Bahrain": {
+      "gdp": 35432686170,
+      "pop": 1456834,
+      "gdpgrowth": 3.88
+    },
+    "Cameroon": {
+      "gdp": 34922782311,
+      "pop": 24393181,
+      "gdpgrowth": 3.55
+    },
+    "Yemen": {
+      "gdp": 31267675216,
+      "pop": 30034389,
+      "gdpgrowth": -5.94
+    },
+    "Latvia": {
+      "gdp": 30463302414,
+      "pop": 1954862,
+      "gdpgrowth": 4.55
+    },
+    "Estonia": {
+      "gdp": 26611651599,
+      "pop": 1317549,
+      "gdpgrowth": 4.85
+    },
+    "Uganda": {
+      "gdp": 25995031850,
+      "pop": 40127085,
+      "gdpgrowth": 3.86
+    },
+    "Zambia": {
+      "gdp": 25868142073,
+      "pop": 17298054,
+      "gdpgrowth": 3.4
+    },
+    "Nepal": {
+      "gdp": 24880266905,
+      "pop": 28183426,
+      "gdpgrowth": 7.91
+    },
+    "El_Salvador": {
+      "gdp": 24805439600,
+      "pop": 6266654,
+      "gdpgrowth": 2.32
+    },
+    "Iceland": {
+      "gdp": 24488467010,
+      "pop": 343632,
+      "gdpgrowth": 3.64
+    },
+    "Honduras": {
+      "gdp": 22978532897,
+      "pop": 9626842,
+      "gdpgrowth": 4.79
+    },
+    "Cambodia": {
+      "gdp": 22158209503,
+      "pop": 15830689,
+      "gdpgrowth": 7.1
+    },
+    "Trinidad_and_Tobago": {
+      "gdp": 22079017627,
+      "pop": 1478607,
+      "gdpgrowth": -2.34
+    },
+    "Cyprus": {
+      "gdp": 22054225828,
+      "pop": 1208523,
+      "gdpgrowth": 4.23
+    },
+    "Zimbabwe": {
+      "gdp": 22040902300,
+      "pop": 14751101,
+      "gdpgrowth": 4.7
+    },
+    "Senegal": {
+      "gdp": 21070225735,
+      "pop": 15157793,
+      "gdpgrowth": 7.15
+    },
+    "Papua_New_Guinea": {
+      "gdp": 20536314601,
+      "pop": 9114796,
+      "gdpgrowth": 2.55
+    },
+    "Afghanistan": {
+      "gdp": 19543976895,
+      "pop": 35643418,
+      "gdpgrowth": 2.67
+    },
+    "Bosnia_and_Herzegovina": {
+      "gdp": 18054854789,
+      "pop": 3440027,
+      "gdpgrowth": 3.19
+    },
+    "Botswana": {
+      "gdp": 17406565823,
+      "pop": 2401840,
+      "gdpgrowth": 2.36
+    },
+    "Laos": {
+      "gdp": 16853087485,
+      "pop": 6997917,
+      "gdpgrowth": 6.89
+    },
+    "Mali": {
+      "gdp": 15334336144,
+      "pop": 19311355,
+      "gdpgrowth": 5.4
+    },
+    "Georgia": {
+      "gdp": 15081338092,
+      "pop": 3771900,
+      "gdpgrowth": 4.83
+    },
+    "Gabon": {
+      "gdp": 15013950984,
+      "pop": 2140215,
+      "gdpgrowth": 0.5
+    },
+    "Jamaica": {
+      "gdp": 14781107822,
+      "pop": 2808376,
+      "gdpgrowth": 0.98
+    },
+    "State_of_Palestine": {
+      "gdp": 14498100000,
+      "pop": 4700947,
+      "gdpgrowth": 3.14
+    },
+    "Nicaragua": {
+      "gdp": 13814261536,
+      "pop": 6480532,
+      "gdpgrowth": 4.86
+    },
+    "Mauritius": {
+      "gdp": 13266427697,
+      "pop": 1294741,
+      "gdpgrowth": 3.82
+    },
+    "Namibia": {
+      "gdp": 13253698015,
+      "pop": 2364534,
+      "gdpgrowth": -0.95
+    },
+    "Albania": {
+      "gdp": 13038538300,
+      "pop": 2879355,
+      "gdpgrowth": 3.84
+    },
+    "Mozambique": {
+      "gdp": 12645508634,
+      "pop": 28569441,
+      "gdpgrowth": 3.74
+    },
+    "Malta": {
+      "gdp": 12518134319,
+      "pop": 479497,
+      "gdpgrowth": 6.42
+    },
+    "Burkina_Faso": {
+      "gdp": 12322864245,
+      "pop": 19835858,
+      "gdpgrowth": 6.3
+    },
+    "Equatorial_Guinea": {
+      "gdp": 12293579173,
+      "pop": 1450694,
+      "gdpgrowth": -4.92
+    },
+    "Bahamas": {
+      "gdp": 12162100000,
+      "pop": 399020,
+      "gdpgrowth": 1.44
+    },
+    "Brunei": {
+      "gdp": 12128089002,
+      "pop": 430276,
+      "gdpgrowth": 1.33
+    },
+    "Armenia": {
+      "gdp": 11536590636,
+      "pop": 2851923,
+      "gdpgrowth": 7.5
+    },
+    "Madagascar": {
+      "gdp": 11499803807,
+      "pop": 26169542,
+      "gdpgrowth": 4.17
+    },
+    "Mongolia": {
+      "gdp": 11433635876,
+      "pop": 3096030,
+      "gdpgrowth": 5.3
+    },
+    "North_Macedonia": {
+      "gdp": 11279509014,
+      "pop": 2111979,
+      "gdpgrowth": 0.24
+    },
+    "Guinea": {
+      "gdp": 10472514515,
+      "pop": 12240789,
+      "gdpgrowth": 10.6
+    },
+    "Chad": {
+      "gdp": 9871247732,
+      "pop": 15085884,
+      "gdpgrowth": -2.95
+    },
+    "Benin": {
+      "gdp": 9246696924,
+      "pop": 11596779,
+      "gdpgrowth": 5.84
+    },
+    "Rwanda": {
+      "gdp": 9135454442,
+      "pop": 12230339,
+      "gdpgrowth": 6.06
+    },
+    "Congo": {
+      "gdp": 8701334800,
+      "pop": 5312340,
+      "gdpgrowth": -3.1
+    },
+    "Haiti": {
+      "gdp": 8408150518,
+      "pop": 10863543,
+      "gdpgrowth": 1.17
+    },
+    "Moldova": {
+      "gdp": 8128493432,
+      "pop": 3180506,
+      "gdpgrowth": 4.5
+    },
+    "Niger": {
+      "gdp": 8119710126,
+      "pop": 21737922,
+      "gdpgrowth": 4.89
+    },
+    "Kyrgyzstan": {
+      "gdp": 7564738836,
+      "pop": 6121261,
+      "gdpgrowth": 4.58
+    },
+    "Tajikistan": {
+      "gdp": 7146449583,
+      "pop": 8925525,
+      "gdpgrowth": 7.62
+    },
+    "Malawi": {
+      "gdp": 6303292264,
+      "pop": 17881167,
+      "gdpgrowth": 4
+    },
+    "Guam": {
+      "gdp": 5859000000,
+      "pop": 168606,
+      "gdpgrowth": 0.19
+    },
+    "Fiji": {
+      "gdp": 5061202767,
+      "pop": 919019,
+      "gdpgrowth": 3.8
+    },
+    "Mauritania": {
+      "gdp": 5024708656,
+      "pop": 4160015,
+      "gdpgrowth": 3.5
+    },
+    "Maldives": {
+      "gdp": 4865546027,
+      "pop": 472442,
+      "gdpgrowth": 6.91
+    },
+    "Montenegro": {
+      "gdp": 4844592067,
+      "pop": 632438,
+      "gdpgrowth": 4.7
+    },
+    "Togo": {
+      "gdp": 4757776485,
+      "pop": 7852795,
+      "gdpgrowth": 4.4
+    },
+    "Barbados": {
+      "gdp": 4673500000,
+      "pop": 279187,
+      "gdpgrowth": 1
+    },
+    "Eswatini": {
+      "gdp": 4433664364,
+      "pop": 1151390,
+      "gdpgrowth": 1.87
+    },
+    "Sierra_Leone": {
+      "gdp": 3775047334,
+      "pop": 7677565,
+      "gdpgrowth": 4.21
+    },
+    "Guyana": {
+      "gdp": 3621046005,
+      "pop": 763252,
+      "gdpgrowth": 2.92
+    },
+    "Liberia": {
+      "gdp": 3285455000,
+      "pop": 4796631,
+      "gdpgrowth": 2.47
+    },
+    "Burundi": {
+      "gdp": 3172416146,
+      "pop": 11155593,
+      "gdpgrowth": 0.5
+    },
+    "Andorra": {
+      "gdp": 3012914131,
+      "pop": 73837,
+      "gdpgrowth": 1.87
+    },
+    "Suriname": {
+      "gdp": 2995827901,
+      "pop": 587559,
+      "gdpgrowth": 1.69
+    },
+    "Timor-Leste": {
+      "gdp": 2954621000,
+      "pop": 1243235,
+      "gdpgrowth": -8
+    },
+    "Aruba": {
+      "gdp": 2700558659,
+      "pop": 105439,
+      "gdpgrowth": 1.33
+    },
+    "Lesotho": {
+      "gdp": 2578265358,
+      "pop": 2170617,
+      "gdpgrowth": -2.29
+    },
+    "Bhutan": {
+      "gdp": 2528007911,
+      "pop": 756121,
+      "gdpgrowth": 4.63
+    },
+    "Central_African_Republic": {
+      "gdp": 1949411659,
+      "pop": 4996741,
+      "gdpgrowth": 4.3
+    },
+    "Belize": {
+      "gdp": 1862614800,
+      "pop": 374693,
+      "gdpgrowth": 1.44
+    },
+    "Cabo_Verde": {
+      "gdp": 1772706451,
+      "pop": 564954,
+      "gdpgrowth": 4.01
+    },
+    "Saint_Lucia": {
+      "gdp": 1737504296,
+      "pop": 177163,
+      "gdpgrowth": 3.82
+    },
+    "San_Marino": {
+      "gdp": 1632860041,
+      "pop": 34056,
+      "gdpgrowth": 1.5
+    },
+    "Northern_Mariana_Islands": {
+      "gdp": 1593000000,
+      "pop": 50729,
+      "gdpgrowth": 25.14
+    },
+    "Antigua_and_Barbuda": {
+      "gdp": 1510084751,
+      "pop": 91119,
+      "gdpgrowth": 3.03
+    },
+    "Seychelles": {
+      "gdp": 1497959569,
+      "pop": 101811,
+      "gdpgrowth": 5.28
+    },
+    "Gambia": {
+      "gdp": 1489464788,
+      "pop": 2381182,
+      "gdpgrowth": 4.56
+    },
+    "Guinea-Bissau": {
+      "gdp": 1346841897,
+      "pop": 1879826,
+      "gdpgrowth": 5.92
+    },
+    "Solomon_Islands": {
+      "gdp": 1303453622,
+      "pop": 643634,
+      "gdpgrowth": 3.24
+    },
+    "Grenada": {
+      "gdp": 1126882296,
+      "pop": 120921,
+      "gdpgrowth": 5.06
+    },
+    "Comoros": {
+      "gdp": 1068124330,
+      "pop": 761664,
+      "gdpgrowth": 2.71
+    },
+    "Saint_Kitts_&_Nevis": {
+      "gdp": 992007403,
+      "pop": 47785,
+      "gdpgrowth": 1.17
+    },
+    "Vanuatu": {
+      "gdp": 862879789,
+      "pop": 290239,
+      "gdpgrowth": 4.5
+    },
+    "Samoa": {
+      "gdp": 840927997,
+      "pop": 207630,
+      "gdpgrowth": 2.7
+    },
+    "St._Vincent_&_Grenadines": {
+      "gdp": 785222509,
+      "pop": 105549,
+      "gdpgrowth": 0.86
+    },
+    "American_Samoa": {
+      "gdp": 634000000,
+      "pop": 49463,
+      "gdpgrowth": -5.38
+    },
+    "Dominica": {
+      "gdp": 496727000,
+      "pop": 70403,
+      "gdpgrowth": -9.53
+    },
+    "Tonga": {
+      "gdp": 427659795,
+      "pop": 105415,
+      "gdpgrowth": 2.7
+    },
+    "Sao_Tome_&_Principe": {
+      "gdp": 392570293,
+      "pop": 208036,
+      "gdpgrowth": 3.87
+    },
+    "Micronesia": {
+      "gdp": 336427500,
+      "pop": 526833,
+      "gdpgrowth": 3.2
+    },
+    "Palau": {
+      "gdp": 289823500,
+      "pop": 17837,
+      "gdpgrowth": -3.57
+    },
+    "Marshall_Islands": {
+      "gdp": 204173430,
+      "pop": 47187,
+      "gdpgrowth": 3.6
+    },
+    "Kiribati": {
+      "gdp": 185572502,
+      "pop": 120362,
+      "gdpgrowth": 0.33
+    },
+    "Tuvalu": {
+      "gdp": 39731317,
+      "pop": 10828,
+      "gdpgrowth": 3.24
+    },
+    "World": {
+      "gdp": 79573864197830,
+      "pop": 7461983101,
+      "gdpgrowth": 3.337172774869111
+    }
+  }
