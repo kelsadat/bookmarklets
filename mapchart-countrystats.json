@@ -234,7 +234,12 @@
       "pop": 10307530,
       "gdpgrowth": 2.68
     },
-    "Czech_Republic_(Czechia)": {
+    "Czech_Republic": {
+      "gdp": 215913545038,
+      "pop": 10531305,
+      "gdpgrowth": 4.29
+    },
+    "Czechia": {
       "gdp": 215913545038,
       "pop": 10531305,
       "gdpgrowth": 4.29
