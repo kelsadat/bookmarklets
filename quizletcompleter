@@ -65,11 +65,11 @@
           answerElement.dispatchEvent(new MouseEvent("click", { bubbles: true, cancelable: true }));
           await delay(2400);
         } else {
-          alert("no answer for " + translation);
+          return
         }
       }
     } else {
-      alert("no translation for " + translateElement.innerText);
+      return
     }
   }
 
@@ -104,17 +104,13 @@
     const stopcompleting = () => { going = false; };
 
     const completeButton = createButton("complete", async () => {
-      try {
-        const amt = parseFloat(input.value);
-        going = true;
-        for (let i = 0; i < amt; i++) {
-          if (!going) {
-            break;
-          }
-          await complete();
+      const amt = 99;
+      going = true;
+      for (let i = 0; i < amt; i++) {
+        if (!going) {
+          break;
         }
-      } catch (err) {
-        console.log(err);
+        await complete();
       }
     });
     const stopButton = createButton("stop", stopcompleting);
