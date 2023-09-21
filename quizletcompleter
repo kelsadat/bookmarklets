@@ -3,7 +3,7 @@
   }
 
   function getSavedData() {
-    const data = localStorage.getItem("QuizletSaved") || "{}";
+    const data = localStorage.getItem("QuizletSaved") || localStorage.getItem("translator_object") || "{}";
     console.log("loaded-data");
     return JSON.parse(data);
   }
