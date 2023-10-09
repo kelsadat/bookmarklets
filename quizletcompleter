@@ -104,7 +104,7 @@
     const stopcompleting = () => { going = false; };
 
     const completeButton = createButton("complete", async () => {
-      const amt = 99;
+      const amt = 999;
       going = true;
       for (let i = 0; i < amt; i++) {
         if (!going) {
