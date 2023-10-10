@@ -444,7 +444,7 @@ class Network {
 
 }
 
-module.exports = {
+return {
 	meanSquaredError : mse,
 	meanSquaredErrorPrime : msePrime,
 	Network : Network,
