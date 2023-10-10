@@ -249,6 +249,8 @@ class Layer {
 		this.type = "Layer";
 		this.input = null;
 		this.output = null;
+		this.forward = this.forward;
+		this.backward = this.backward;
 	}
 }
 
