@@ -140,6 +140,15 @@ class Matrix {
 		return sum
 	}
 	
+	static shape(matrix) {
+		
+		const numRows = matrix.length;
+		const numCols = matrix[0].length;
+		
+		return [numRows, numCols];
+		
+	}
+	
 	static forEach(arr, callback) {
 		
 		const numRows = arr.length;
@@ -249,8 +258,6 @@ class Layer {
 		this.type = "Layer";
 		this.input = null;
 		this.output = null;
-		this.forward = this.forward;
-		this.backward = this.backward;
 	}
 }
 
@@ -260,14 +267,13 @@ class Dense extends Layer {
 		super();
 		this.type = "Dense";
 		this.weights = weights || Matrix.random(outputSize, inputSize);
-		this.bias = biases || Matrix.random(outputSize, 1);
+		this.bias = biases || Matrix.random(outputSize, 1);		
 		
 	}
 	
 	forward (input) {
 		
 		this.input = input;
-		//console.log(`Matrix.dot(${JSON.stringify(this.weights, null, 0)}, ${JSON.stringify(this.input, null, 0)}) = ${JSON.stringify(res)}`);
 		return Matrix.add(Matrix.dot(this.weights, this.input ), this.bias );
 		
 	}
@@ -349,7 +355,8 @@ class Network {
 				if (typeof lyr[key] === "function") {
 					slyr[key] = {
 						type : "function",
-						value : lyr[key].toString()
+						name : lyr[key].name,
+						value : lyr[key].toString() //: lyr[key].toString()lyr[key].toString().startsWith("function ") ?
 					}
 				} else {
 					slyr[key] = {
@@ -373,12 +380,20 @@ class Network {
 		
 		for (let i = 0; i < data.network.length; i++) {
 			const slyr = data.network[i];
-			const lyr = {};
+			let lyr = {};
+			
+			if (slyr.type.value == "Dense") {
+				lyr = new Dense(1, 1);
+			} else if (slyr.type.value == "Activation") {
+				lyr = new Activation(() => {}, () => {});
+			};
+						
 			for (const key in slyr) {
 				if (slyr[key].type == "function") {
-					lyr[key] = new Function(slyr[key].value);
+					const generatorFunction = new Function(`${slyr[key].value}\n\nreturn ${slyr[key].name}`);
+					lyr[key] = generatorFunction();
 				} else {
-					lyr[key] = lyr[key.value];
+					lyr[key] = slyr[key].value;
 				}
 			}
 			network.push(lyr)
@@ -386,6 +401,136 @@ class Network {
 		
 		return new Network(network, xtrain, ytrain)
 		
+	}
+	
+	static async evolve(requestedparams, initialpopulation, testingcallback, learningCallback=null) {
+		
+		const params = {
+			generations : 10000,
+			population : 20,
+			survivors : 1,
+			mutation : 0.1,
+			mutationBySize : true,
+		}
+		
+		for (const key in requestedparams) {
+			params[key] = requestedparams[key];
+		};
+		
+		const nets = [];
+		let ids = [];
+		
+		function genid() {
+			const id = Math.random()
+			if (!ids.includes(id)) {
+				return id
+			} else { return genid() };
+		}
+		
+		function giveid(net) {
+			return {id : genid(), net : net};
+		}
+
+		function cleardeadids() {
+			
+			const newids = [];
+			
+			nets.forEach(net => newids.push(net.id));
+			
+			ids = newids;
+			
+		}
+
+
+		function populate(survivors) {
+			
+			while (nets.length < params.population) {
+				const survivor = survivors[nets.length % survivors.length];
+				const offspring = Network.clone(survivor.net);//.clone();
+
+				offspring.mutate(params.mutation, params.mutationBySize);
+				
+				const trackedNetwork = giveid(offspring);
+				
+				nets.push(trackedNetwork);
+			}
+			
+		}
+
+		async function sort() {
+			
+			const scores = {};
+			const promises = [];
+			
+			nets.forEach((trackedNetwork) => {
+				promises.push(new Promise(async (r) => {
+					const newscore = await testingcallback(trackedNetwork.net);
+					scores[trackedNetwork.id] = newscore;
+					r();
+				}));
+			});
+			
+			for (let i = 0; i < promises.length; i++) {
+				await promises[i];
+			};
+			
+			nets.sort((a, b) => {return scores[b.id] - scores[a.id]});
+			
+			return scores;
+
+		}
+		
+		function depopulate() {
+
+			while (nets.length > params.survivors) {
+				nets.pop();
+			}; 			 
+			
+			cleardeadids();
+			
+		}
+		
+		initialpopulation.forEach((e) => {nets.push(giveid(e))})
+		
+		populate([...nets]);
+		
+		for (let generation = 0; generation < params.generations; generation ++) {
+			
+			const scores = await sort();
+			if (learningCallback) {
+				learningCallback(generation, scores, nets);
+			};
+			depopulate();
+			populate([...nets]);
+		
+		}
+		
+		await sort();
+		
+		return nets;
+		
+	}
+	
+	static clone(net) {
+		return Network.fromJSON(Network.toJSON(net, true));
+	}
+	
+	clone() {
+		return Network.fromJSON(Network.toJSON(this, true));
+	}
+	
+	mutate(mutateAmount, divideBySize=true) {
+		const mutateMultiplier = divideBySize ? mutateAmount / this.network.length : mutateAmount;
+		for (let i = 0; i < this.network.length; i++) {
+			const lyr = this.network[i];
+			if (lyr.type == "Dense") {
+				const shape = Matrix.shape(lyr.weights);
+				const weightsGradient = Matrix.multiplyInt( Matrix.random(shape[0], shape[1]), mutateMultiplier );
+				const biasGradient = Matrix.multiplyInt( Matrix.random(shape[0], 1) , mutateMultiplier );
+				lyr.weights = Matrix.add(lyr.weights, weightsGradient);
+				lyr.bias = Matrix.add(lyr.bias, biasGradient)
+			}
+		}
 	}
 	
 	forward (input) {
