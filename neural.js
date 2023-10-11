@@ -356,7 +356,7 @@ class Network {
 					slyr[key] = {
 						type : "function",
 						name : lyr[key].name,
-						value : lyr[key].toString() //: lyr[key].toString()lyr[key].toString().startsWith("function ") ?
+						value : lyr[key].toString().startsWith("function ") ? lyr[key].toString() : "function " + lyr[key].toString()
 					}
 				} else {
 					slyr[key] = {
@@ -372,7 +372,17 @@ class Network {
 		
 	}
 	
+	toString() {
+		return JSON.stringify(Network.toJSON);
+	};
+	
+	static from(str) {
+		return Network.fromJSON(str);
+	};
+	
 	static fromJSON (data) {
+		
+		data = typeof data == "object" ? data : JSON.parse(data);
 		
 		const network = [];
 		const xtrain = data.hasOwnProperty("xtrain") ? data.xtrain : null;
@@ -507,7 +517,7 @@ class Network {
 		
 		await sort();
 		
-		return nets;
+		return nets[0].net;
 		
 	}
 	
@@ -594,6 +604,8 @@ class Network {
 return {
 	meanSquaredError : mse,
 	meanSquaredErrorPrime : msePrime,
+	mse : mse,
+	msePrime : msePrime,
 	Network : Network,
 	Matrix : Matrix,
 	Layer : Layer,
