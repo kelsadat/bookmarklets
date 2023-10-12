@@ -305,11 +305,9 @@ class Activation extends Layer {
 		
 	}
 	
-	backward (outputG
-		return Matrix.multiply(outputGradient, Matrix.forEach(this.input, this.activationPrime))
-		
-	}radient, learningRate) {
-		
+	backward (outputGradient, learningRate) {
+		return Matrix.multiply(outputGradient, Matrix.forEach(this.input, this.activationPrime));	
+	}		
 	
 }
 
@@ -625,7 +623,7 @@ class Network {
 
 }
 
-return {
+module.exports = {
 	meanSquaredError : mse,
 	meanSquaredErrorPrime : msePrime,
 	mse : mse,
