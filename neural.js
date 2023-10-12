@@ -330,16 +330,34 @@ function leakyReLUDerivative(x) {
   return x > 0 ? 1 : 0.01;
 }
 
+function tanh(x) {
+  return (Math.exp(x) - Math.exp(-x)) / (Math.exp(x) + Math.exp(-x));
+}
+
+function tanhDerivative(x) {
+  const tanhX = (Math.exp(x) - Math.exp(-x)) / (Math.exp(x) + Math.exp(-x));
+  return 1 - tanhX * tanhX;
+}
+
+function sigmoid(x) {
+  return 1 / (1 + Math.exp(-x));
+}
+
+function sigmoidDerivative(x) {
+  const sigX = 1 / (1 + Math.exp(-x));
+  return sigX * (1 - sigX);
+}
+
 function max(x, matrix) {
 	const numRows = matrix.length;
 	const numCols = matrix[0].length;
 	let total = 0;
 	for (let i = 0; i < numRows; i++) {
 	  for (let j = 0; j < numCols; j++) {
-		total += matrix[i][j]; 
+		total += Math.max(matrix[i][j], 0.001); 
 	  }
 	}
-	return x/total;
+	return Math.max(x/total, 0.001);
 }
 
 function maxPrime(x) {
@@ -631,4 +649,8 @@ return {
 	maxPrime : maxPrime,
 	leakyReLU : leakyReLU,
 	leakyReLUPrime : leakyReLUDerivative,
+	tanh : tanh,
+	tanhPrime : tanhDerivative,
+	sigmoid : sigmoid,
+	sigmoidPrime : sigmoidDerivative
 }
