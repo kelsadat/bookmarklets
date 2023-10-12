@@ -23,7 +23,7 @@ class Matrix {
 
 	  return result;
 	}
-
+	
 	static multiplyInt(matrix, integer) {
 	  const numRows = matrix.length;
 	  const numCols = matrix[0].length;
@@ -158,7 +158,7 @@ class Matrix {
 		for (let i = 0; i < numRows; i++) {
 			resultArray[i] = new Array(numCols);
 			for (let j = 0; j < numCols; j++) {
-				resultArray[i][j] = callback(arr[i][j]);
+				resultArray[i][j] = callback(arr[i][j], arr);
 			}
 		}
 		
@@ -305,11 +305,11 @@ class Activation extends Layer {
 		
 	}
 	
-	backward (outputGradient, learningRate) {
-		
+	backward (outputG
 		return Matrix.multiply(outputGradient, Matrix.forEach(this.input, this.activationPrime))
 		
-	}
+	}radient, learningRate) {
+		
 	
 }
 
@@ -321,12 +321,36 @@ function msePrime(ytrue, ypred) {
 	return Matrix.multiplyInt( Matrix.divideScalar ( Matrix.sub(ypred, ytrue), Matrix.size(ytrue)) , 2 )
 }
 
-function leakyReLU(x, alpha = 0.01) {
-  return x > 0 ? x : alpha * x;
+function leakyReLU(alpha = 0.01) {
+  function c(x) {x > 0 ? x : alpha * x};
+  return c;
 }
 
-function leakyReLUDerivative(x, alpha = 0.01) {
-  return x > 0 ? 1 : alpha;
+function leakyReLUDerivative(alpha = 0.01) {
+  function c(x) {x > 0 ? 1 : alpha};
+  return c;
+}
+
+function max() {
+  function c(x, matrix) {
+	const numRows = matrix.length;
+	const numCols = matrix[0].length;
+	let total = 0;
+	for (let i = 0; i < numRows; i++) {
+	  for (let j = 0; j < numCols; j++) {
+		total += matrix[i][j]; 
+	  }
+	}
+	return x/total;
+  }
+  return c;
+}
+
+function maxPrime() {
+  function c(x) {
+	return x;
+  }
+  return c;
 }
 
 class Network {
@@ -611,9 +635,8 @@ return {
 	Layer : Layer,
 	Dense : Dense,
 	Activation : Activation,
-	Active : Activation,
-	D : Dense,
-	A : Activation,
+	max : max,
+	maxPrime : maxPrime,
 	leakyReLU : leakyReLU,
 	leakyReLUPrime : leakyReLUDerivative,
 }
