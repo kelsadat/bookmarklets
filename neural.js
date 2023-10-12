@@ -623,7 +623,7 @@ class Network {
 
 }
 
-module.exports = {
+return {
 	meanSquaredError : mse,
 	meanSquaredErrorPrime : msePrime,
 	mse : mse,
