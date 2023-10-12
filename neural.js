@@ -23,7 +23,7 @@ class Matrix {
 
 	  return result;
 	}
-	
+
 	static multiplyInt(matrix, integer) {
 	  const numRows = matrix.length;
 	  const numCols = matrix[0].length;
@@ -188,6 +188,7 @@ class Matrix {
 
 	static sub(matrixA, matrixB) {
 	  if (matrixA.length !== matrixB.length || matrixA[0].length !== matrixB[0].length) {
+		console.log(matrixA.length, matrixA[0].length, matrixB.length, matrixB[0].length)
 		throw new Error('Matrices must have the same dimensions for subtraction.');
 	  }
 
@@ -306,8 +307,10 @@ class Activation extends Layer {
 	}
 	
 	backward (outputGradient, learningRate) {
-		return Matrix.multiply(outputGradient, Matrix.forEach(this.input, this.activationPrime));	
-	}		
+		
+		return Matrix.multiply(outputGradient, Matrix.forEach(this.input, this.activationPrime))
+		
+	}
 	
 }
 
@@ -319,18 +322,15 @@ function msePrime(ytrue, ypred) {
 	return Matrix.multiplyInt( Matrix.divideScalar ( Matrix.sub(ypred, ytrue), Matrix.size(ytrue)) , 2 )
 }
 
-function leakyReLU(alpha = 0.01) {
-  function c(x) {x > 0 ? x : alpha * x};
-  return c;
+function leakyReLU(x) {
+  return x > 0 ? x : 0.01 * x;
 }
 
-function leakyReLUDerivative(alpha = 0.01) {
-  function c(x) {x > 0 ? 1 : alpha};
-  return c;
+function leakyReLUDerivative(x) {
+  return x > 0 ? 1 : 0.01;
 }
 
-function max() {
-  function c(x, matrix) {
+function max(x, matrix) {
 	const numRows = matrix.length;
 	const numCols = matrix[0].length;
 	let total = 0;
@@ -340,15 +340,10 @@ function max() {
 	  }
 	}
 	return x/total;
-  }
-  return c;
 }
 
-function maxPrime() {
-  function c(x) {
+function maxPrime(x) {
 	return x;
-  }
-  return c;
 }
 
 class Network {
@@ -582,14 +577,13 @@ class Network {
 		}
 	}
 	
-	trainOn (x, y, learningRate, errorcb, errorprcb) {
+	linearRegress (x, y, learningRate, errorcb, errorprcb) {
 		let e = 0;
 		
 		const output = this.forward(x);
 		e += errorcb(y, output);
 		
-		this.backward(errorprcb([y], output), learningRate);
-		
+		this.backward(errorprcb(y, output), learningRate);
 		e /= this.xtrain.length;
 		
 		return e;
@@ -609,7 +603,7 @@ class Network {
 				const x = this.xtrain[i];
 				const y = this.ytrain[i];
 				
-				error += this.trainOn(x, y, learningRate, errorcb, errorprcb) 
+				error += this.linearRegress(x, y, learningRate, errorcb, errorprcb) 
 			
 			}
 
